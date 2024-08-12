@@ -31,7 +31,7 @@
   <body>
 
       <nav class="navbar navbar-light bg-light justify-content-between">
-        <i class="fa-solid fa-dog mx-2">  Instadog </i>
+        <i class="fa-solid fa-dog mx-3">  Instadawgs </i>
         <div class="d-flex">
         <button
           type="button"
@@ -54,7 +54,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Modal title
+                  Create a new post 
                 </h1>
                 <button
                   type="button"
@@ -63,7 +63,17 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">...</div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Caption:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    <i class="fa-solid fa-camera "></i>&nbsp
+                    <i class="fa-regular fa-image"></i>&nbsp
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                </form>
+              </div>
               <div class="modal-footer">
                 <button
                   type="button"
@@ -72,8 +82,8 @@
                 >
                   Close
                 </button>
-                <button type="button" class="btn btn-primary">
-                  Save changes
+                <button type="button" class="btn btn-primary bg-success text-white mx-2">
+                  Publish
                 </button>
               </div>
             </div>
@@ -91,15 +101,15 @@
           <i class="fa-solid fa-gear"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
           </ul>
         </div>
       </nav>
       
       <!-- grid icons -->
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center pt-2 pb-2">
         <a href="grid.html"><i class="fa-solid fa-table-cells mx-4 text-dark"></i></a>
         <a href="index.html"><i class="fa-solid fa-table-cells-large text-dark"></i></a>
       </div>
@@ -117,7 +127,7 @@
           </div>
       
           <div class="col-md-4">
-            <img src="https://www.inspiremore.com/wp-content/uploads/2021/02/Bouche-Lee-the-grumpy-dog-6-1.jpg" class="w-75 h-100" alt="...">         
+            <img src="https://www.inspiremore.com/wp-content/uploads/2021/02/Bouche-Lee-the-grumpy-dog-6-1.jpg" class="w-100 h-100" alt="...">         
           </div>
         
         </div>
