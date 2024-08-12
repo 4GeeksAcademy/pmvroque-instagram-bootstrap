@@ -26,58 +26,69 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
-    <title>Instadog</title>
+    <title>Instadawgs</title>
   </head>
-  <body>
+  <body class="bg-light">
+    
     <nav class="navbar navbar-light bg-light justify-content-between">
-      <i class="fa-solid fa-dog mx-2">  Instadog </i>
-      <div class="d-flex">
-      <button
-        type="button"
-        class="btn btn-primary bg-success text-white mx-2 "
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Create a new post
-      </button>
+      <i class="fa-solid fa-dog mx-3">  Instadawgs </i>
+       <div class="d-flex">
+         <button
+           type="button"
+           class="btn btn-primary bg-success text-white mx-2 "
+           data-bs-toggle="modal"
+           data-bs-target="#exampleModal"
+           >
+           Create a new post
+         </button>
       
       <!-- Modal-->
       <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+     >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Create a new post 
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Caption:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+              <i class="fa-solid fa-camera "></i>&nbsp
+              <i class="fa-regular fa-image"></i>&nbsp
+              <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary bg-success text-white mx-2">
+            Publish
+          </button>
         </div>
       </div>
+    </div>
+    </div>
       
       <!-- dropdown -->
       <div class="dropdown">
@@ -90,48 +101,189 @@
         <i class="fa-solid fa-gear"></i>
         </button>
         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
         </ul>
       </div>
     </nav>
     
     <!-- grid icons -->
-    <div class="d-flex justify-content-center">
-      <a href="grid.html"><i class="fa-solid fa-table-cells mx-4 text-dark"></i></a>
-      <a href="index.html"><i class="fa-solid fa-table-cells-large text-dark"></i></a>
+    <div class="d-flex justify-content-center pt-2 pb-2">
+      <a href="grid.html"><i class="fa-solid fa-table-cells mx-4 text-dark fa-xl"></i></a>
+      <a href="index.html"><i class="fa-solid fa-table-cells-large text-dark fa-xl"></i></a>
     </div>
     
     <!-- individual post -->
-    <div class="d-flex flex-xxl-column justify-content-center mt-4">
-      
-      <div>
-        <div class="card" style="width: 18rem;">
-          <div>
-            <h1>Grumpiest dog of all time!</h1>
-            <p>12/25</p>
-         </div>
-          <img src="data:image/jpeg;base64,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" class="object-fit-fill border rounded" alt="...">    
-           <div class="card-body">
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           </div>
-      </div>
-
-      <div class="card mt-3" style="width: 18rem;">
-        <img src="https://i2-prod.mirror.co.uk/incoming/article26180648.ece/ALTERNATES/s1200b/1_Grumpy-dog-with-wild-fur-has-people-convinced-Mogwai-are-real.jpg" class="object-fit-fill border rounded" alt="...">
-         <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         </div>
-      </div>
-
-      <div class="card mt-3" style="width: 18rem;">
-        <img src="data:image/jpeg;base64,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" class="object-fit-fill border rounded" alt="..."> 
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="d-flex flex-column ">
+    
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Grumpiest dog of all time!</h3>
+            <p class="m-2 fs-5">12/25</p>
           </div>
+           <img src="https://www.thesun.co.uk/wp-content/uploads/2018/03/nintchdbpict000394872596.jpg" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>10,000 likes</strong></p>
+            <p class="card-text">When someone woke you up in the middle of your siesta mood</p>
+          </div>
+        </div>
       </div>
-    </div>
+    
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Smile for the camera!</h3>
+            <p class="m-2 fs-5">4/27</p>
+          </div>
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/09/09/15/famous-pets-chloe-kardogian3.jpg" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>92,7819 likes</strong></p>
+            <p class="card-text">My mom made me do this. #ootd #TGIF</p>
+          </div>
+        </div>  
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Crazy hair day!</h3>
+            <p class="m-2 fs-5">8/24</p>
+          </div>
+            <img src="https://www.inspiremore.com/wp-content/uploads/2021/02/Bouche-Lee-the-grumpy-dog-6-1.jpg" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>86,7286 likes</strong></p>
+            <p class="card-text">I gotta go have my hair done soon.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Sunday reset</h3>
+            <p class="m-2 fs-5">6/03</p>
+          </div>
+            <img src="https://s.yimg.com/ny/api/res/1.2/fZqIDdiWDa1Ftk_a_OVOQA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en-AU/homerun/y7.yahoo7lifestyle/47c5b426f23a5d520f6bbfaea574db01" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>77,821 likes</strong></p>
+            <p class="card-text">Errands are done for today, time to take a nap!</p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Mood for the day</h3>
+            <p class="m-2 fs-5">4/13</p>
+          </div>
+            <img src="https://media.istockphoto.com/id/457512783/photo/chihuahua-dog-head-with-disgruntled-expression.jpg?s=612x612&w=0&k=20&c=SA6wjlflzlSoMWMGo0OVaO8-aHH1LUIdWzYeM562Fl0=" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>27,638 likes</strong></p>
+            <p class="card-text">Shark week started yesterday, I'm feeling it every single part of my body. #TimeOfTheMonth #NotToday #SharkWeek</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3"></h3>
+            <p class="m-2 fs-5">8/24</p>
+          </div>
+            <img src="https://thumbs.dreamstime.com/b/little-shih-tzu-dog-making-grumpy-face-close-up-against-white-studio-background-233483541.jpg" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>86,7286 likes</strong></p>
+            <p class="card-text">I gotta go have my hair done soon.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Do you have a problem?</h3>
+            <p class="m-2 fs-5">8/24</p>
+          </div>
+            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2020/02/chico-grumpy-dog-with-underbite-hazelandthegang-25-5e3bde7c8add9__700.jpg" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>372,189 likes</strong></p>
+            <p class="card-text">Don't mess with me!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Outdoor activities</h3>
+            <p class="m-2 fs-5">5/07</p>
+          </div>
+            <img src="https://media.istockphoto.com/id/1350336534/photo/grumpy-puppy.jpg?s=612x612&w=0&k=20&c=imFyRaT-racr2ZsP7dinMpV03cKuDLgIT-taVQTdAGs=" alt="...">    
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>934,839 likes</strong></p>
+            <p class="card-text">Out and about!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Wacky!</h3>
+            <p class="m-2 fs-5">3/18</p>
+          </div>
+            <img src="https://thehydrant.wordpress.com/wp-content/uploads/2015/02/03.jpg">
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>342,536 likes</strong></p>
+            <p class="card-text">When life throws you lemons...throw those lemins back!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">I wasn't ready for this.</h3>
+            <p class="m-2 fs-5">2/15</p>
+          </div>
+            <img src="https://media.istockphoto.com/id/147694372/photo/badger-dog.jpg?s=612x612&w=0&k=20&c=3iNYkarzevpIJeHcmQAykq0cubiSlL4URl91qIlacxM=">
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>213,545 likes</strong></p>
+            <p class="card-text">The photographer was to fast, I couldn't keep up!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">Vibes</h3>
+            <p class="m-2 fs-5">3/18</p>
+          </div>
+            <img src="https://pawsfurjoy.com/wp-content/uploads/2020/08/Phinn-and-Maddie-Pawsgiving-10-scaled.jpg">
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>321,548 likes</strong></p>
+            <p class="card-text">Feeling the 80 degrees weather~</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <div class="card" style="width: 50rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="m-2 mb-3">What time is it? It's summer time!</h3>
+            <p class="m-2 fs-5">7/20</p>
+          </div>
+            <img src="https://www.popphoto.com/uploads/2022/09/24/comedypets22-07.jpeg?auto=webp&width=1440&height=993.6">
+          <div class="card-body">
+            <p><i class="fa-regular fa-heart">&nbsp</i><strong>2,948,679 likes</strong></p>
+            <p class="card-text">Do you know how much I love with playing water? #summer #Playing #ThanksMom</p>
+          </div>
+        </div>
+      </div>
 
     </div>
   </body>
